@@ -1,0 +1,16 @@
+# Dependencies & Build Output
+node_modules/
+dist/
+coverage/
+
+# Environment & Secrets (NEVER commit real keys)
+.env
+.env.*
+!.env.example
+
+# 7A Personal Runtime Workspace & Logs
+.7a/
+workspace/
+*.sqlite
+*.sqlite-*
+*.jsonl
