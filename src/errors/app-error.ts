@@ -5,7 +5,8 @@ export type ErrorCode =
 | "ACTION_CANCELLED"
 | "QUEUE_FULL"
 | "TOOL_NOT_FOUND"
-| "INTERNAL_ERROR";
+| "INTERNAL_ERROR"
+| "TOOL_TIMEOUT";
 
 
 export class AppError extends Error {
