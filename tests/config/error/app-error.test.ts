@@ -17,7 +17,7 @@ expect(error).toBeInstanceOf(Error);
     const error = new AppError(message, statusCode, code);
     expect(error.message).toBe(message);
     expect(error.statusCode).toBe(statusCode);  
-    expect(error.code).toBe(code);
+    expect(error.code).toBe(code); 
 
     });
     it("should have IsOperational defaulting to true",() =>{
