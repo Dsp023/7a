@@ -21,7 +21,7 @@ export interface WorkspacePaths{
     usageLogPath: string;
     sqliteIndexPath: string;
 }
-export function expandHome(inputPath: string): string {
+  export function expandHome(inputPath: string): string {
     if(inputPath === "~") return os.homedir();
     if(inputPath.startsWith("~/") || inputPath.startsWith("~\\")){
         return path.join(os.homedir(),inputPath.slice(2));
@@ -29,7 +29,7 @@ export function expandHome(inputPath: string): string {
     }
     return path.resolve(inputPath);
 }
-export async function writeIfMissing(filePath: string,
+   export async function writeIfMissing(filePath: string,
     content: string): Promise<void> {
         try{
             await fs.writeFile(filePath,content,{
