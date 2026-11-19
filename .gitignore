@@ -10,7 +10,7 @@ coverage/
 
 # 7A Personal Runtime Workspace & Logs
 .7a/
-workspace/
+/workspace/
 *.sqlite
 *.sqlite-*
 *.jsonl
