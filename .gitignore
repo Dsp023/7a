@@ -13,3 +13,7 @@ coverage/
 /workspace/
 *.sqlite
 *.sqlite-*
+*.jsonl
+
+# Internal agent instructions
+.agents/
